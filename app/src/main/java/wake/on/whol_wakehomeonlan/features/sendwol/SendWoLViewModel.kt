@@ -11,6 +11,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import wake.on.whol_wakehomeonlan.main.MainActivityActions
 import wake.on.whol_wakehomeonlan.model.Device
 import wake.on.whol_wakehomeonlan.model.DeviceDao
@@ -185,12 +186,57 @@ class SendWoLViewModel @Inject constructor(
             }
 
             MainActivityActions.OnDeviceSaved -> {
-//                viewModelScope.launch {
-//                    deviceDao.insertDevice(saveDevice)
-//                }
+                checkIfDeviceExistsAndStore(saveDevice)
+            }
+        }
+    }
 
+    private fun checkIfDeviceExistsAndStore(saveDevice: Device) {
+        viewModelScope.launch {
+            val devices = withContext(Dispatchers.IO) {
+                deviceDao.getDevicesByFields(
+                    ipAddress = saveDevice.ipAddress,
+                    macAddress = saveDevice.macAddress,
+                    portNumber = saveDevice.portNumber,
+                )
+            }
+
+            if (devices.isEmpty()) {
+                storeDevice(saveDevice)
+            } else {
+                deleteDevice(devices.first())
+            }
+        }
+    }
+
+    private fun deleteDevice(device: Device) {
+        viewModelScope.launch {
+            withContext(Dispatchers.IO) {
+                deviceDao.deleteDevice(device)
+            }
+
+            _uiState.update {
+                it.copy(deviceSaved = false)
+            }
+            _deviceState.update {
+                it.copy(isSavingDevice = false)
+            }
+        }
+    }
+
+    private fun storeDevice(saveDevice: Device) {
+        viewModelScope.launch {
+            val id = withContext(Dispatchers.IO) {
+                deviceDao.insertDevice(saveDevice)
+            }
+
+            if (id > 0) {
                 _uiState.update {
                     it.copy(deviceSaved = true)
+                }
+
+                _deviceState.update {
+                    it.copy(isSavingDevice = false)
                 }
             }
         }
