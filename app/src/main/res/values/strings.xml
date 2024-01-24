@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WHoL - Wake Home On Lan</string>
+
+    <string name="side_bar_title">The Lazy Tech Enthusiast\'s Dream!</string>
+
+    <string name="side_bar_under_sub"> WHoL combines the comfort of your couch with the convenience of Wake on Lan. Control your computer\'s power with just a few taps on your Android TV - no need to leave your cozy spot! </string>
+
+    <string name="side_bar_description_title">Setup in Seconds:</string>
+
+    <string name="side_bar_description">
+        IP Address: Your computer\'s digital location.\nMAC Address: The unique identifier for your device.\nPort Number: The secret code to awaken your computer.\n</string>
+
+    <string name="side_bar_why_whol">Why WHoL?</string>
+
+    <string name="side_bar_why_whol_first">Open source: Enjoy an app made from pure love</string>
+    <string name="side_bar_why_whol_second">Effortless: Turn your computer on without moving an inch.</string>
+
+</resources>
