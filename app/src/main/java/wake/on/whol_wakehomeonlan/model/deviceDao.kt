@@ -5,7 +5,6 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface DeviceDao {
@@ -17,8 +16,15 @@ interface DeviceDao {
 //    suspend fun getDeviceById(id: Int): Device
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertDevice(device: Device)
+    suspend fun insertDevice(device: Device): Long
 
-//    @Delete
-//    suspend fun deleteDevice(device: Device)
+    @Query("SELECT * FROM device_table WHERE ipAddress = :ipAddress  AND macAddress = :macAddress AND portNumber = :portNumber")
+    suspend fun getDevicesByFields(
+        ipAddress: String,
+        macAddress: String,
+        portNumber: String
+    ): List<Device>
+
+    @Delete
+    suspend fun deleteDevice(device: Device)
 }
