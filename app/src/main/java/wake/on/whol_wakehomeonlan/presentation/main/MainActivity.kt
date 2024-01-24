@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalTvMaterial3Api::class)
 
-package wake.on.whol_wakehomeonlan.main
+package wake.on.whol_wakehomeonlan.presentation.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,8 +12,8 @@ import androidx.navigation.compose.rememberNavController
 import androidx.tv.material3.ExperimentalTvMaterial3Api
 import dagger.hilt.EntryPoint
 import dagger.hilt.android.AndroidEntryPoint
-import wake.on.whol_wakehomeonlan.features.sendwol.SendWholScreenAppRoute
-import wake.on.whol_wakehomeonlan.main.navigation.WholNavhost
+import wake.on.whol_wakehomeonlan.presentation.sendwol.SendWholScreenAppRoute
+import wake.on.whol_wakehomeonlan.presentation.main.navigation.WholNavhost
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {

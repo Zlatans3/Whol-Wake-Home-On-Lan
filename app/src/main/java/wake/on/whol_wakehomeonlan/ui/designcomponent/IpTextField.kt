@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.designcomponent
+package wake.on.whol_wakehomeonlan.ui.designcomponent
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background

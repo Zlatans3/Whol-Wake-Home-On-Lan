@@ -1,8 +1,8 @@
-package wake.on.whol_wakehomeonlan.features.devices
+package wake.on.whol_wakehomeonlan.presentation.devices
 
 import androidx.compose.runtime.Composable
 import androidx.hilt.navigation.compose.hiltViewModel
-import wake.on.whol_wakehomeonlan.designcomponent.WholButton
+import wake.on.whol_wakehomeonlan.ui.designcomponent.WholButton
 
 @Composable
 fun DevicesScreenRoute(

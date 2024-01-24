@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.main
+package wake.on.whol_wakehomeonlan.presentation.main
 
 sealed class MainActivityActions {
     data class OnIpTextFieldChanged(val ipAddress: String) : MainActivityActions()

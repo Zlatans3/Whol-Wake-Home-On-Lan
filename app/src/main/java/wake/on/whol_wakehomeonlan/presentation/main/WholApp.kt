@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.main
+package wake.on.whol_wakehomeonlan.presentation.main
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

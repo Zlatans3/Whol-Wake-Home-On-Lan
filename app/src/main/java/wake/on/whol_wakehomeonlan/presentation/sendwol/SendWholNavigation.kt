@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.features.sendwol
+package wake.on.whol_wakehomeonlan.presentation.sendwol
 
 import androidx.navigation.NavController
 import androidx.navigation.NavGraphBuilder

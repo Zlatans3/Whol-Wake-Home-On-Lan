@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.model
+package wake.on.whol_wakehomeonlan.data.model
 
 //import android.content.Context
 //import dagger.Module

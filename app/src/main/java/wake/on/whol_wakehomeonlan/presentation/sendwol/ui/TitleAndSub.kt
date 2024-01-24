@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.features.sendwol.ui
+package wake.on.whol_wakehomeonlan.presentation.sendwol.ui
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier

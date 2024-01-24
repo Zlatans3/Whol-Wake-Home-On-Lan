@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.model
+package wake.on.whol_wakehomeonlan.data.model
 
 import androidx.room.Dao
 import androidx.room.Delete

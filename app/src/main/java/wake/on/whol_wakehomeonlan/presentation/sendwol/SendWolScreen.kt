@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.features.sendwol
+package wake.on.whol_wakehomeonlan.presentation.sendwol
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -30,11 +30,11 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.tv.material3.ExperimentalTvMaterial3Api
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.Text
-import wake.on.whol_wakehomeonlan.main.MainActivityActions
+import wake.on.whol_wakehomeonlan.presentation.main.MainActivityActions
 import wake.on.whol_wakehomeonlan.R
-import wake.on.whol_wakehomeonlan.designcomponent.WholButton
-import wake.on.whol_wakehomeonlan.features.sendwol.ui.SendWoLTextFields
-import wake.on.whol_wakehomeonlan.features.sendwol.ui.TitleAndSub
+import wake.on.whol_wakehomeonlan.ui.designcomponent.WholButton
+import wake.on.whol_wakehomeonlan.presentation.sendwol.ui.SendWoLTextFields
+import wake.on.whol_wakehomeonlan.presentation.sendwol.ui.TitleAndSub
 import wake.on.whol_wakehomeonlan.ui.theme.BlueGray300
 import wake.on.whol_wakehomeonlan.ui.theme.LightYellow
 import wake.on.whol_wakehomeonlan.ui.theme.VSpacer

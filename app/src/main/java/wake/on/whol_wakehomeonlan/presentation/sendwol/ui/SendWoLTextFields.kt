@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.features.sendwol.ui
+package wake.on.whol_wakehomeonlan.presentation.sendwol.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -10,7 +10,7 @@ import androidx.compose.ui.focus.FocusDirection
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
-import wake.on.whol_wakehomeonlan.designcomponent.WoLTextField
+import wake.on.whol_wakehomeonlan.ui.designcomponent.WoLTextField
 import wake.on.whol_wakehomeonlan.ui.theme.VSpacer
 
 @Composable

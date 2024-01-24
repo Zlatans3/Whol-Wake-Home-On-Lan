@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.features.sendwol
+package wake.on.whol_wakehomeonlan.presentation.sendwol
 
 import android.util.Log
 import androidx.lifecycle.SavedStateHandle
@@ -11,10 +11,10 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
-import wake.on.whol_wakehomeonlan.main.MainActivityActions
-import wake.on.whol_wakehomeonlan.model.Device
-import wake.on.whol_wakehomeonlan.model.DeviceDao
-import wake.on.whol_wakehomeonlan.model.DeviceState
+import wake.on.whol_wakehomeonlan.presentation.main.MainActivityActions
+import wake.on.whol_wakehomeonlan.data.model.Device
+import wake.on.whol_wakehomeonlan.data.model.DeviceDao
+import wake.on.whol_wakehomeonlan.data.model.DeviceState
 import java.net.DatagramPacket
 import java.net.DatagramSocket
 import java.net.InetAddress

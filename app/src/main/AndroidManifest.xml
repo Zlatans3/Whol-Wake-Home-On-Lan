@@ -11,12 +11,12 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:name=".main.WholApp"
+        android:name=".presentation.main.WholApp"
         android:supportsRtl="true"
         android:theme="@style/Theme.WholWakeHomeOnLan"
         tools:targetApi="31">
         <activity
-            android:name=".main.MainActivity"
+            android:name=".presentation.main.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.WholWakeHomeOnLan">

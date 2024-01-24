@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.main.navigation
+package wake.on.whol_wakehomeonlan.presentation.main.navigation
 
 import androidx.annotation.RawRes
 

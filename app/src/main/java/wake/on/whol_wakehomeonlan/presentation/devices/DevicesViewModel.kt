@@ -1,4 +1,4 @@
-package wake.on.whol_wakehomeonlan.features.devices
+package wake.on.whol_wakehomeonlan.presentation.devices
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
